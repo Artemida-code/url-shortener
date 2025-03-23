@@ -12,7 +12,7 @@ pub struct Link {
 #[derive(Serialize)]
 pub struct ReturnLink {
     pub status: String,
-    pub error: Option<actix_web::Error>,
+    pub error: Option<String>,
     pub alias: Option<String>,
 }
 

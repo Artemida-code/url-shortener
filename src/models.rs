@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-use std::sync::Mutex;
 use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize)]
@@ -15,6 +13,8 @@ pub struct ReturnLink {
     pub alias: Option<String>,
 }
 
-pub struct DataLinks {
-    pub links: Mutex<HashMap<String, String>>,
+#[derive(Serialize)]
+pub struct Output {
+    pub status: String,
 }
+

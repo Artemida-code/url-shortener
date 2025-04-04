@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 
+
 #[derive(Deserialize)]
 pub struct Link {
     pub url: String,

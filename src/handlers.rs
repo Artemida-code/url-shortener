@@ -1,9 +1,9 @@
 use rusqlite::{params, Connection};
 use actix_web::{web, HttpResponse};
 use rand::Rng;
-use crate::{Link, ReturnLink, Output};
 use r2d2::Pool;
 use r2d2_sqlite::SqliteConnectionManager;
+use crate::{Link, ReturnLink, Output};
 
 pub fn init_db() -> Pool<SqliteConnectionManager> {
     let manager = SqliteConnectionManager::file("db1.db");

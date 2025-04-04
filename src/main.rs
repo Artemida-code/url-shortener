@@ -1,7 +1,7 @@
 mod handlers;
 mod models;
-use crate::{handlers::*, models::*};
 use actix_web::{App, HttpServer, web, web::Data};
+use crate::{handlers::*, models::*};
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {

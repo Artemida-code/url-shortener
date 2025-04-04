@@ -3,7 +3,6 @@ mod models;
 use crate::{handlers::*, models::*};
 use actix_web::{App, HttpServer, web, web::Data};
 
-
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     let pool = init_db();
